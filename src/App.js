@@ -3,9 +3,7 @@ import { Router, Link } from '@reach/router';
 import Astro from './pages/Astro';
 import NEOMisses from './pages/NEOMisses';
 import Logo from './components/Logo';
-// import isAstroPage from './functions/active';
 import './App.css';
-
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './neomisses.css';
-import generateDate from './../functions/generateDate';
+import generateDate from '../functions/generateDate';
 
 const { REACT_APP_ACCESS_TOKEN } = process.env;
 
@@ -76,7 +76,7 @@ const NEOMisses = () => {
                                 <h3>Relative Velocity:</h3>
                                 <p>{parseFloat(element.close_approach_data[0].relative_velocity.kilometers_per_hour).toFixed(0)} kilometers per hour</p>
                             </div>
-                            <div className="neomisses-data">
+                            <div className="neomisses-diameter-data">
                                 <div className="neomisses-data">
                                     <h3>Max. Diameter:</h3>
                                     <p>{parseFloat(element.estimated_diameter.meters.estimated_diameter_max).toFixed(0)} meters</p>
