@@ -81,7 +81,7 @@ input[type=date]:focus {
         padding: 0 30px;
     }
 
-    p {
+    .neomisses-data p {
         padding-left: 10px;
     }
 

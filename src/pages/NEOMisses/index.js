@@ -1,6 +1,6 @@
 import React from 'react';
 import './neomisses.css';
-import generateDate from '../functions/generateDate';
+import generateDate from '../../functions/generateDate';
 
 const { REACT_APP_ACCESS_TOKEN } = process.env;
 
@@ -32,7 +32,7 @@ const NEOMisses = () => {
             <div>
                 <div className="neomisses-query">
                     <h3>Enter a date:</h3>
-                    <input type="date" placeholder={new Date().toISOString().substr(0, 10)} onChange={e => {
+                    <input type="date" onChange={e => {
                         if(!e.target.value.startsWith('20') && !e.target.value.startsWith('19') && !e.target.value.startsWith('18')) {
                         } else {
                             setSearchText(e.target.value)}}} />
@@ -46,14 +46,14 @@ const NEOMisses = () => {
 
                 <div className="neomisses-query">
                     <h3>Enter another date:</h3>
-                    <input type="date" placeholder={new Date().toISOString().substr(0, 10)} onChange={e => {
+                    <input type="date" onChange={e => {
                         if(!e.target.value.startsWith('20') && !e.target.value.startsWith('19') && !e.target.value.startsWith('18')) {
                         } else {
                             setSearchText(e.target.value)}}} />
                 </div>
 
                 <div>
-                    {searchResult && Object.keys(searchResult).length !== 0 && <div><h2>Near Earth Objects recorded on {date}</h2></div>}
+                    {searchResult && Object.keys(searchResult).length !== 0 && <div><h2>Asteroids and comets recorded by NASA on {date}</h2></div>}
                 </div>
 
                 {searchResult && searchResult.map((element,i) => {
