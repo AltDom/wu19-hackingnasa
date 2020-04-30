@@ -3,6 +3,7 @@ import { Router, Link } from '@reach/router';
 import Astro from './pages/Astro';
 import NEOMisses from './pages/NEOMisses';
 import Logo from './components/Logo';
+import GitHub from './components/GitHub';
 import './App.css';
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
           
         </Router>
 
+      </div>
+
+      <div className="footer">
+        <h5>Developed by AltDom 2020.</h5>
+        <Link className="github" to="https://github.com/AltDom"><GitHub /></Link>
       </div>
     </div>
   );
