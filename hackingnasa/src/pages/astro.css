@@ -1,0 +1,33 @@
+.astro-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.astro-text {
+    text-align: left;
+    padding: 10px 30px 0 30px;
+}
+
+p {
+    color: white;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+img {
+    display: block;
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* media queries desktop */
+/* .astro-content {
+    display: flex;
+    justify-content: space-around;
+} */
