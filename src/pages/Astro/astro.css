@@ -17,6 +17,8 @@ p {
 h1 {
     color: white;
     font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    border-bottom: 2px solid red;
+    display: inline-block;
 }
 
 img {

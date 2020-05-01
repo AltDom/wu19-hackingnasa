@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Link } from '@reach/router';
 import Astro from './pages/Astro';
 import NEOMisses from './pages/NEOMisses';
+import SingleRoid from './pages/SingleRoid';
 import Logo from './components/Logo';
 import GitHub from './components/GitHub';
 import './App.css';
@@ -23,6 +24,7 @@ function App() {
         <Router>
           <Astro path="/" />
           <NEOMisses path="/neomisses" />
+          <SingleRoid path="/neomisses/:slug" />
           
         </Router>
 

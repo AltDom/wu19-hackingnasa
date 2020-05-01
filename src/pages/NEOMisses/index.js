@@ -11,7 +11,7 @@ const NEOMisses = () => {
 
     React.useEffect(() => {
         const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${searchText}&end_date=${searchText}&api_key=${REACT_APP_ACCESS_TOKEN}`;
-        
+        // const url = `https://api.nasa.gov/neo/rest/v1/neo/3542519?api_key=${REACT_APP_ACCESS_TOKEN}`;
         if (searchText === "") {
             return
         }
@@ -22,6 +22,7 @@ const NEOMisses = () => {
         })
         .then((queryResult) => queryResult.json())
         .then((json) => {
+            console.log(json)
             const setPath = json.near_earth_objects[searchText];
             setSearchResult(setPath);
         })
@@ -31,13 +32,13 @@ const NEOMisses = () => {
         return (
             <div>
                 <div className="neomisses-query">
-                    <h3>Enter a date:</h3>
+                    <h3>Search for space rocks by date:</h3>
                     <input type="date" onChange={e => {
                         if(!e.target.value.startsWith('20') && !e.target.value.startsWith('19') && !e.target.value.startsWith('18')) {
                         } else {
                             setSearchText(e.target.value)}}} />
                 </div>
-                {searchResult===undefined && <div><h3>No Near Earth Objects were recorded on {date}</h3></div>}
+                {searchResult===undefined && <div><h3>No results for {date}</h3></div>}
             </div>
         )
     } else {
@@ -53,7 +54,7 @@ const NEOMisses = () => {
                 </div>
 
                 <div>
-                    {searchResult && Object.keys(searchResult).length !== 0 && <div><h2>Asteroids and comets recorded by NASA on {date}</h2></div>}
+                    {searchResult && Object.keys(searchResult).length !== 0 && <div><h2>Results for {date}</h2></div>}
                 </div>
 
                 {searchResult && searchResult.map((element,i) => {
@@ -62,7 +63,7 @@ const NEOMisses = () => {
         
                             <div className="neomisses-data">
                                 <h3>Name:</h3>
-                                <p>{element.name}</p>
+                                <a href={`/neomisses/${element.id}`}><p>{element.name}</p></a>
                             </div>
                             {element.close_approach_data[0].close_approach_date_full &&<div className="neomisses-data">
                                 <h3>Time of Closest Approach:</h3>
