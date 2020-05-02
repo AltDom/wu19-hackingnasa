@@ -54,7 +54,7 @@ const NEOMisses = () => {
                     <a href={`/neomisses/2066391`}><p>Moshup - a two-bodied binary asteroid</p></a>
                     <a href={`/neomisses/2163693`}><p>Atira - a large binary asteroid with it's own moon on one side</p></a>
                     <a href={`/neomisses/2004179`}><p>Toutatis - an asteroid on a highly chaotic and hazardous orbit</p></a>
-                    <a href={`/neomisses/2001685`}><p>Toro - the source of an asteroid fragment that struck a woman</p></a>
+                    <a href={`/neomisses/2001685`}><p>Toro - the source of a rock fragment that struck a woman</p></a>
                     <a href={`/neomisses/2003908`}><p>Nyx - shares it's name with one of Pluto's moons (Nix)</p></a>
                     <a href={`/neomisses/2004197`}><p>Morpheus - shares it's name with a Matrix character</p></a>
                     <a href={`/neomisses/2006178`}><p>1986 DA - a metallic asteroid</p></a>
