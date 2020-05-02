@@ -38,21 +38,21 @@ const NEOMisses = () => {
                             setSearchText(e.target.value)}}} />
                 </div>
                 <div className="neomisses-content">
-                    <h2>Highlights</h2>
+                    <h2>Asteroids of historic significance</h2>
+                    <a href={`/neomisses/2004486`}><p>Mithra - potentially hazardous and highly eccentric</p></a>
                     <a href={`/neomisses/2001221`}><p>Amor - the namesake asteroid for more than 7000 others</p></a>
                     <a href={`/neomisses/2001981`}><p>Midas - a volcanic fragment from main-belt asteroid Vesta</p></a>
                     <a href={`/neomisses/2002062`}><p>Aten - the first asteroid found with period less than a year</p></a>
                     <a href={`/neomisses/2002201`}><p>Oljato - an asteroid that was lost for 32 years</p></a>
                     <a href={`/neomisses/2001036`}><p>Ganymed - the largest near earth object</p></a>
                     <a href={`/neomisses/2004183`}><p>Cuno - named after it's South African discoverer</p></a>
-                    <a href={`/neomisses/2004486`}><p>Mithra - potentially hazardous and highly eccentric</p></a>
                     <a href={`/neomisses/2007088`}><p>Ishtar - a minor planet with a rotational period of 2.7 hours</p></a>
                     <a href={`/neomisses/2001862`}><p>Apollo - the first found of the Apollo type asteroids</p></a>
                     <a href={`/neomisses/2099942`}><p>Apophis - once thought to be passing though a gravitational keyhole to impact Earth</p></a>
                     <a href={`/neomisses/2001566`}><p>Icarus - the first asteroid observed by radar</p></a>
                     <a href={`/neomisses/2003753`}><p>Cruithne - has a bean-shaped orbit relative to Earth</p></a>
                     <a href={`/neomisses/2066391`}><p>Moshup - a two-bodied binary asteroid</p></a>
-                    <a href={`/neomisses/2163693`}><p>Atira - a large binary asteroid with it's own moon on one side</p></a>
+                    <a href={`/neomisses/2163693`}><p>Atira - a large binary asteroid with a moon on one side</p></a>
                     <a href={`/neomisses/2004179`}><p>Toutatis - an asteroid on a highly chaotic and hazardous orbit</p></a>
                     <a href={`/neomisses/2001685`}><p>Toro - the source of a rock fragment that struck a woman</p></a>
                     <a href={`/neomisses/2003908`}><p>Nyx - shares it's name with one of Pluto's moons (Nix)</p></a>
@@ -67,7 +67,6 @@ const NEOMisses = () => {
     } else {
         return (
             <div>
-
                 <div className="neomisses-query">
                     <h3>Enter another date:</h3>
                     <input type="date" onChange={e => {

@@ -24,7 +24,7 @@ const Astro = () => {
     } else {
         return (
             <div className="astro-content">
-                <img src={searchResult.hdurl} alt=""/>
+                <img src={searchResult.url} alt=""/>
                 <div className="astro-text">
                     <h1>{searchResult.title}</h1>
                     <p>{searchResult.explanation}</p>

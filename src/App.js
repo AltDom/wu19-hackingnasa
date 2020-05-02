@@ -25,7 +25,6 @@ function App() {
           <Astro path="/" />
           <NEOMisses path="/neomisses" />
           <SingleRoid path="/neomisses/:slug" />
-          
         </Router>
 
       </div>
