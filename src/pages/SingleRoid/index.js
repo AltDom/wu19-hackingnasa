@@ -60,7 +60,7 @@ const SingleRoid = (props) => {
                     </div>
                     <div className="neomisses-data">
                         <h3>Potentially Hazardous:</h3>
-                        <p>{searchResult.is_potentially_hazardous_asteroid ? 'True' : 'False'}</p>
+                        <p>{searchResult.is_potentially_hazardous_asteroid ? 'Yes' : 'No'}</p>
                     </div>
                     <div className="neomisses-data">
                         <h3>Number of encounters:</h3>

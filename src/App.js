@@ -32,7 +32,7 @@ function App() {
 
       <div className="footer">
         <h5>Developed by AltDom 2020.</h5>
-        <Link className="github" to="https://github.com/AltDom"><GitHub /></Link>
+        <a className="github" href="https://github.com/AltDom"><GitHub /></a>
       </div>
     </div>
   );
