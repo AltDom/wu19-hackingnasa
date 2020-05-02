@@ -67,7 +67,7 @@ const SingleRoid = (props) => {
                         <p>{searchResult.close_approach_data.length}</p>
                     </div>
                     <div className="neomisses-data">
-                        <h3>View object's orbit:</h3>
+                        <h3>View orbit:</h3>
                         <a href={`${searchResult.nasa_jpl_url};old=0;orb=1;cov=0;log=0;cad=0#orb`}><p>{searchResult.name}</p></a>
                     </div>
 
