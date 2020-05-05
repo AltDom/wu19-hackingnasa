@@ -21,7 +21,6 @@ const NEOMisses = () => {
         })
         .then((queryResult) => queryResult.json())
         .then((json) => {
-            console.log(json)
             const setPath = json.near_earth_objects[searchText];
             setSearchResult(setPath);
         })
