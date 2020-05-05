@@ -48,8 +48,9 @@ h2 {
     border-bottom: 2px solid red;
 }
 
-a p, a:visited {
+a p, a p:visited {
     text-decoration: underline solid blue;
+    outline: none;
 }
 
 a p:hover {

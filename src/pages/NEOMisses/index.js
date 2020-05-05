@@ -42,7 +42,7 @@ const NEOMisses = () => {
                     <a href={`/neomisses/2004486`}><p>Mithra - potentially hazardous and highly eccentric</p></a>
                     <a href={`/neomisses/2001221`}><p>Amor - the namesake asteroid for more than 7000 others</p></a>
                     <a href={`/neomisses/2001981`}><p>Midas - a volcanic fragment from main-belt asteroid Vesta</p></a>
-                    <a href={`/neomisses/2002062`}><p>Aten - the first asteroid found with period less than a year</p></a>
+                    <a href={`/neomisses/2002062`}><p>Aten - the first asteroid found with a period less than a year</p></a>
                     <a href={`/neomisses/2002201`}><p>Oljato - an asteroid that was lost for 32 years</p></a>
                     <a href={`/neomisses/2001036`}><p>Ganymed - the largest near earth object</p></a>
                     <a href={`/neomisses/2004183`}><p>Cuno - named after it's South African discoverer</p></a>
