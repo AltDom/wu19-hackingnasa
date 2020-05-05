@@ -50,7 +50,7 @@ h2 {
 
 a p, a p:visited {
     text-decoration: underline solid blue;
-    outline: none;
+    outline: 0;
 }
 
 a p:hover {
