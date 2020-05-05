@@ -23,7 +23,7 @@ h1 {
 
 img {
     display: block;
-    width: 70%;
+    min-width: 70%;
     height: auto;
     object-fit: cover;
 }

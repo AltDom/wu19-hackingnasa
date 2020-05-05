@@ -48,6 +48,14 @@ h2 {
     border-bottom: 2px solid red;
 }
 
+a p, a:visited {
+    text-decoration: underline solid blue;
+}
+
+a p:hover {
+    color: darkgray;
+}
+
 input[type=date] {
     padding: 5px;
     margin-top: 3px;

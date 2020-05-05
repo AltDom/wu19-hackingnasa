@@ -14,7 +14,6 @@ const SingleRoid = (props) => {
         })
         .then((queryResult) => queryResult.json())
         .then((json) => {
-            console.log(json)
             const setPath = json;
             setSearchResult(setPath);
         })

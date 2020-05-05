@@ -19,7 +19,7 @@ function App() {
         </div>
 
       </div>
-      <div className="page">
+      <div className="page-body">
 
         <Router>
           <Astro path="/" />
