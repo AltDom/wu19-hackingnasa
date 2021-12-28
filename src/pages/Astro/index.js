@@ -25,7 +25,7 @@ const Astro = () => {
         return (
             <div className="astro-content">
 
-              {searchResult.url.includes('youtube') ? <iframe src={searchResult.url} /> : <img src={searchResult.url} alt=""/>}
+              {searchResult.url.includes('youtube') ? <iframe title="NASA Astro Pic of the Day" src={searchResult.url} /> : <img src={searchResult.url} alt=""/>}
 
                 <div className="astro-text">
                     <h1>{searchResult.title}</h1>
