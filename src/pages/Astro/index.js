@@ -18,13 +18,15 @@ const Astro = () => {
             setSearchResult(json);
         })
     }, []);
-    
+
     if (!searchResult) {
         return null;
     } else {
         return (
             <div className="astro-content">
-                <img src={searchResult.url} alt=""/>
+
+              {searchResult.url.includes('youtube') ? <iframe src={searchResult.url} /> : <img src={searchResult.url} alt=""/>}
+
                 <div className="astro-text">
                     <h1>{searchResult.title}</h1>
                     <p>{searchResult.explanation}</p>
