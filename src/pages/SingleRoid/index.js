@@ -8,7 +8,7 @@ const SingleRoid = (props) => {
 
     React.useEffect(() => {
         const url = `https://api.nasa.gov/neo/rest/v1/neo/${props.slug}?api_key=${REACT_APP_ACCESS_TOKEN}`;
-        
+
         fetch(url, {
             method: 'GET',
         })
@@ -18,7 +18,7 @@ const SingleRoid = (props) => {
             setSearchResult(setPath);
         })
     }, [props.slug]);
-    
+
     if (!searchResult) {
         return (
             <div>
@@ -67,7 +67,7 @@ const SingleRoid = (props) => {
                     </div>
                     <div className="neomisses-data">
                         <h3>View orbit:</h3>
-                        <a href={`${searchResult.nasa_jpl_url};old=0;orb=1;cov=0;log=0;cad=0#orb`}><p>{searchResult.name}</p></a>
+                        <a href={`${searchResult.nasa_jpl_url.replace('sbdb.cgi', '/tools/sbdb_lookup.html#/')}&view=VOP`}><p>{searchResult.name}</p></a>
                     </div>
 
                     <h2>Past and upcoming events:</h2>
@@ -75,7 +75,7 @@ const SingleRoid = (props) => {
                     {searchResult.close_approach_data.map((element,i) => {
                         return (
                             <div key={i} className="neomisses-events-content">
-        
+
                                 <div className="neomisses-data">
                                     <h3>Date:</h3>
                                     <p>{generateDate(element.close_approach_date)}</p>
@@ -92,11 +92,11 @@ const SingleRoid = (props) => {
                                     <h3>Relative Velocity:</h3>
                                     <p>{parseFloat(element.relative_velocity.kilometers_per_hour).toFixed(0)} kilometers per hour</p>
                                 </div>
-                            
+
                             </div>
-                        )  
+                        )
                     })}
-                </div>}    
+                </div>}
             </div>
         )
     }

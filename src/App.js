@@ -7,6 +7,12 @@ import Logo from './components/Logo';
 import GitHub from './components/GitHub';
 import './App.css';
 
+const scrollToTop = () => {
+  setTimeout(()=>{
+    window.scrollTo(0, 0);
+  }, 1);
+}
+
 function App() {
   return (
     <div className="app">
@@ -15,7 +21,7 @@ function App() {
         <Logo />
         <div className="nav">
           <Link className="link" to="/">Astro Pic of the Day</Link>
-          <Link className="link" to="/neomisses">Near Earth Objects</Link>
+          <Link className="link" to="/neomisses" onClick={()=>scrollToTop()}>Near Earth Objects</Link>
         </div>
 
       </div>
